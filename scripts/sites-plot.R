@@ -92,9 +92,9 @@ both.map <- ggmap(la.map) +
   scalebar(data = latlongs.scale,
             dist = 5,
             location = "bottomleft",
-           dist_unit = "km",
-  #          dd2km = TRUE,
-  transform = TRUE,
+           #dd2km = TRUE, argument has been superceded by dist_unit and transform
+            dist_unit = "km",
+            transform = TRUE,
             height = 0.03,
          st.dist = 0.04,
             st.size = 4.5,
